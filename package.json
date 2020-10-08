@@ -1,0 +1,43 @@
+{
+  "name": "todo-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.4.0",
+    "axios": "^0.20.0",
+    "classnames": "^2.2.6",
+    "npm-run-all": "^4.1.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.1",
+    "react-scripts": "3.4.3",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "start-app": "react-scripts start",
+    "start-api": "json-server --watch db.json --port 3004 --delay 2000",
+    "start": "npm-run-all --parallel start-api start-app"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "json-server": "^0.16.1"
+  }
+}
